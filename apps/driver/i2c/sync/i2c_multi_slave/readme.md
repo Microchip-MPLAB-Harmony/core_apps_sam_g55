@@ -1,14 +1,14 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# I2C Driver Synchronous - I2C multi slave
 
 This example application demonstrates the multi-client feature of the synchronous mode of the I2C driver by communicating with an external EEPROM and a temperature sensor.
 
 ## Description
 
-This example uses the I2C driver in synchronous mode and demonstrates the multi-client feature. The application uses a [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) that has a temperature sensor and an EEPROM, both interfaced on the same I2C bus. 
+This example uses the I2C driver in synchronous mode and demonstrates the multi-client feature. The application uses a [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) that has a temperature sensor and an EEPROM, both interfaced on the same I2C bus.
 
-Two application threads are created which act as clients to the same instance of the I2C driver: 
+Two application threads are created which act as clients to the same instance of the I2C driver:
 
 APP_I2C_TEMP_SENSOR_Tasks:
 
@@ -47,7 +47,7 @@ The following table shows the target hardware for the application projects.
 - The A2 address line of TWI must be soldered to GND. This is done to modify the address of the the EEPROM on IO1 Xplained Pro Extension Kit. The modification changes the address of the temperature sensor to 0x4B and the EEPROM to 0x50
 
     ![output](images/io1_xplained_address_sel.png)
-	
+
 ### Setting up [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 
 - Connect the [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the EXT1 header of the [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
@@ -58,15 +58,15 @@ The following table shows the target hardware for the application projects.
 
 1. Open the Terminal application (Ex.:Tera term) on the computer.
    Configure the DEBUG port settings as follows:
-   
+
    Baud : 115200
 
    Data : 8 Bits
 
    Parity : None
-   
+
    Stop : 1 Bit
-   
+
    Flow Control : None
 
 2. Build and program the application using its IDE.
