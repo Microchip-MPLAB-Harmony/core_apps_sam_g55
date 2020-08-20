@@ -1,12 +1,12 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# I2C Driver Synchronous - I2C EEPROM
 
 This example application demonstrates how to use the I2C driver in synchronous mode to perform read/write operations on an EEPROM.
 
 ## Description
 
-This example uses the I2C driver in synchronous mode to communicate with an EEPROM to perform read and write operations. 
+This example uses the I2C driver in synchronous mode to communicate with an EEPROM to perform read and write operations.
 
 The application communicates with the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
 
@@ -41,7 +41,7 @@ The following table shows the target hardware for the application projects.
 
 - Install an [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) on the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 - Connect the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) to the EXT1 header of the [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
-- Connect the Debug USB port on the board to the computer using a micro USB cable     
+- Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
 
