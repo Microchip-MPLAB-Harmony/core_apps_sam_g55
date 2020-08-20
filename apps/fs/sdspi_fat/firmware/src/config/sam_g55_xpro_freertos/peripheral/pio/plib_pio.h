@@ -66,9 +66,9 @@
 #define GPIO_PA11_Set()               (PIOA_REGS->PIO_SODR = (1<<11))
 #define GPIO_PA11_Clear()             (PIOA_REGS->PIO_CODR = (1<<11))
 #define GPIO_PA11_Toggle()            (PIOA_REGS->PIO_ODSR ^= (1<<11))
-#define GPIO_PA11_Get()               ((PIOA_REGS->PIO_PDSR >> 11) & 0x1)
 #define GPIO_PA11_OutputEnable()      (PIOA_REGS->PIO_OER = (1<<11))
 #define GPIO_PA11_InputEnable()       (PIOA_REGS->PIO_ODR = (1<<11))
+#define GPIO_PA11_Get()               ((PIOA_REGS->PIO_PDSR >> 11) & 0x1)
 #define GPIO_PA11_PIN                  PIO_PIN_PA11
 
 
