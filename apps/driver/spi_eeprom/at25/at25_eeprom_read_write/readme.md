@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# SPI EEPROM driver - AT25 EEPROM read write
 
 This example application demonstrates how to use the AT25 driver to perform read and write operations on AT25 series of EEPROM.
 
@@ -36,7 +36,7 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
     - [EEPROM 4 click board](https://www.mikroe.com/eeprom-4-click)
 	- [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
-	
+
 ### Setting up [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 
 - Install [EEPROM 4 click board](https://www.mikroe.com/eeprom-4-click) on the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
