@@ -1,12 +1,12 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# I2C driver asynchronous - I2C EEPROM
 
-This example application demonstrates how to use the I2C driver in asynchronous mode to perform read/write operations on an EEPROM. 
+This example application demonstrates how to use the I2C driver in asynchronous mode to perform read/write operations on an EEPROM.
 
 ## Description
 
-This example uses the I2C driver in asynchronous mode to communicate with an EEPROM to perform read and write operations. 
+This example uses the I2C driver in asynchronous mode to communicate with an EEPROM to perform read and write operations.
 
 The application communicates with the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
 
