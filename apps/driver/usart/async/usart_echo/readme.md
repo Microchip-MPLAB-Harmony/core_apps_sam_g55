@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# USART driver asynchronous - USART Echo
 
 This example application demonstrates the asynchronous mode of the USART driver by echoing the received characters
 
@@ -42,17 +42,17 @@ The following table shows the target hardware for the application projects.
     Baud : 115200
 
     Data : 8 Bits
-    
+
     Parity : None
-    
+
     Stop : 1 Bit
-    
+
     Flow Control : None
 3. Build and program the application using its IDE.
 4. Type a character and observe the output on the console as shown below:
     - On success, the character typed is echoed back and an LED toggles each time a character is echoed.
 
-    ![output](images/async_usart_echo_console.png)	
+    ![output](images/async_usart_echo_console.png)
 
 Refer to the following table for LED name:
 
