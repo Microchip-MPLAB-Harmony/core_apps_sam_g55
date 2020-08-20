@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# FreeRTOS basic
 
 This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status.
 
