@@ -1,12 +1,12 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# SPI Driver Synchronous - Spi multi slave
 
 This example application demonstrates the multi client feature of the synchronous mode of the SPI driver by reading and writing to two EEPROMs connected to the same SPI bus.
 
 ## Description
 
-The application uses the synchronous mode of the SPI driver and demonstrates the multi client feature by reading and writing to two EEPROMs connected to the same SPI bus. The example also demonstrates how to setup two different client transfers at two different baud rates. 
+The application uses the synchronous mode of the SPI driver and demonstrates the multi client feature by reading and writing to two EEPROMs connected to the same SPI bus. The example also demonstrates how to setup two different client transfers at two different baud rates.
 
 The example has three RTOS threads for the purpose:
 
@@ -42,7 +42,7 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
     - Two [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click)
 	- Two [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
-	
+
 ### Setting up [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 
 - Install [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) on the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO
