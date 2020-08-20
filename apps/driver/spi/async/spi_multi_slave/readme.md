@@ -1,12 +1,12 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# SPI driver asynchronous - SPI multi slave
 
 This example application demonstrates the multi client feature of the asynchronous mode of the SPI driver by reading and writing to two EEPROMs connected to the same SPI bus.
 
 ## Description
 
-This application uses the asynchronous mode of the SPI driver and demonstrates the multi client feature by reading and writing to two EEPROMs connected to the same SPI bus. The example also demonstrates how to setup two different client transfers at two different baud rates. 
+This application uses the asynchronous mode of the SPI driver and demonstrates the multi client feature by reading and writing to two EEPROMs connected to the same SPI bus. The example also demonstrates how to setup two different client transfers at two different baud rates.
 
 The application communicates with two [EEPROM 3 click boards](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
 
@@ -36,7 +36,7 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
     - Two [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click)
 	- Two [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
-	
+
 ### Setting up [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 
 - Install [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) on the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
