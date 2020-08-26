@@ -14,7 +14,7 @@ APP_EEPROM1_Tasks: This thread performs write-read operation on the first EEPROM
 APP_EEPROM2_Tasks: This thread performs write-read operation on the second EEPROM
 APP_MONITOR_Tasks: This thread checks the status of the EEPROM transfers and turns on the LED if the transfers are successful
 
-The application communicates with two [EEPROM 3 click boards](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
+The application communicates with two [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) that has AT24CM02 EEPROM on it.
 
 ## Downloading and building the application
 
@@ -45,7 +45,7 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 
-- Install [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) on the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO
+- Install [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) on the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 
 - Connect the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) on EXT1 and EXT3 headers of the [SAM G55 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamg55-xpro)
 

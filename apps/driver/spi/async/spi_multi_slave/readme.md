@@ -8,7 +8,7 @@ This example application demonstrates the multi client feature of the asynchrono
 
 This application uses the asynchronous mode of the SPI driver and demonstrates the multi client feature by reading and writing to two EEPROMs connected to the same SPI bus. The example also demonstrates how to setup two different client transfers at two different baud rates.
 
-The application communicates with two [EEPROM 3 click boards](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
+The application communicates with two [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) that has AT24CM02 EEPROM on it.
 
 ## Downloading and building the application
 
