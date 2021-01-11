@@ -1,21 +1,24 @@
 /*******************************************************************************
-  Board Support Package Header File.
+  FLEXCOM7 USART PLIB
 
-  Company:
+  Company
     Microchip Technology Inc.
 
-  File Name:
-    bsp.h
+  File Name
+    plib_flexcom7_usart.h
 
-  Summary:
-    Board Support Package Header File 
+  Summary
+    FLEXCOM7 USART peripheral library interface.
 
-  Description:
-    This file contains constants, macros, type definitions and function
-    declarations 
+  Description
+    This file defines the interface to the FLEXCOM7 USART peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
+
+  Remarks:
+    None.
 *******************************************************************************/
 
-// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -38,10 +41,9 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
-// DOM-IGNORE-END
 
-#ifndef _BSP_H
-#define _BSP_H
+#ifndef PLIB_FLEXCOM7_USART_H // Guards against multiple inclusion
+#define PLIB_FLEXCOM7_USART_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -49,24 +51,16 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
 #include "device.h"
+#include "plib_flexcom_usart_local.h"
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: BSP Macros
-// *****************************************************************************
-// *****************************************************************************
-/*** LED Macros for LED ***/
-#define LED_Toggle() (PIOA_REGS->PIO_ODSR ^= (1<<6))
-#define LED_On() (PIOA_REGS->PIO_CODR = (1<<6))
-#define LED_Off() (PIOA_REGS->PIO_SODR = (1<<6))
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus // Provide C++ Compatibility
 
+	extern "C" {
 
-
+#endif
+// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
@@ -74,41 +68,49 @@
 // *****************************************************************************
 // *****************************************************************************
 
-// *****************************************************************************
-/* Function:
-    void BSP_Initialize(void)
+#define FLEXCOM7_USART_FrequencyGet()    (uint32_t)(119996416UL)
 
-  Summary:
-    Performs the necessary actions to initialize a board
+/****************************** FLEXCOM7 USART API *********************************/
+void FLEXCOM7_USART_Initialize( void );
 
-  Description:
-    This function initializes the LED and Switch ports on the board.  This
-    function must be called by the user before using any APIs present on this
-    BSP.
+bool FLEXCOM7_USART_SerialSetup( FLEXCOM_USART_SERIAL_SETUP* setup, uint32_t srcClkFreq );
 
-  Precondition:
-    None.
+FLEXCOM_USART_ERROR FLEXCOM7_USART_ErrorGet( void );
 
-  Parameters:
-    None
+size_t FLEXCOM7_USART_Write(uint8_t* pWrBuffer, const size_t size );
 
-  Returns:
-    None.
+size_t FLEXCOM7_USART_WriteCountGet(void);
 
-  Example:
-    <code>
-    //Initialize the BSP
-    BSP_Initialize();
-    </code>
+size_t FLEXCOM7_USART_WriteFreeBufferCountGet(void);
 
-  Remarks:
-    None
-*/
+size_t FLEXCOM7_USART_WriteBufferSizeGet(void);
 
-void BSP_Initialize(void);
+bool FLEXCOM7_USART_WriteNotificationEnable(bool isEnabled, bool isPersistent);
 
-#endif // _BSP_H
+void FLEXCOM7_USART_WriteThresholdSet(uint32_t nBytesThreshold);
 
-/*******************************************************************************
- End of File
-*/
+void FLEXCOM7_USART_WriteCallbackRegister( FLEXCOM_USART_RING_BUFFER_CALLBACK callback, uintptr_t context);
+
+size_t FLEXCOM7_USART_Read(uint8_t* pRdBuffer, const size_t size);
+
+size_t FLEXCOM7_USART_ReadCountGet(void);
+
+size_t FLEXCOM7_USART_ReadFreeBufferCountGet(void);
+
+size_t FLEXCOM7_USART_ReadBufferSizeGet(void);
+
+bool FLEXCOM7_USART_ReadNotificationEnable(bool isEnabled, bool isPersistent);
+
+void FLEXCOM7_USART_ReadThresholdSet(uint32_t nBytesThreshold);
+
+void FLEXCOM7_USART_ReadCallbackRegister( FLEXCOM_USART_RING_BUFFER_CALLBACK callback, uintptr_t context);
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
+#endif
+// DOM-IGNORE-END
+
+#endif //PLIB_FLEXCOM7_USART_H

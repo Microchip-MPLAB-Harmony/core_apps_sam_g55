@@ -109,6 +109,7 @@
 void SYS_Initialize ( void* data )
 {
 
+
     EFC_Initialize();
   
 	PIO_Initialize();
@@ -118,15 +119,18 @@ void SYS_Initialize ( void* data )
 
 
 	BSP_Initialize();
+    FLEXCOM7_USART_Initialize();
+
 	WDT_REGS->WDT_MR = WDT_MR_WDDIS_Msk; 		// Disable WDT 
 
 
 
 
 
-    APP_Initialize();
-    APP1_Initialize();
-    APP2_Initialize();
+    TASK1_Initialize();
+    TASK2_Initialize();
+    TASK3_Initialize();
+    TASK4_Initialize();
 
 
     NVIC_Initialize();
