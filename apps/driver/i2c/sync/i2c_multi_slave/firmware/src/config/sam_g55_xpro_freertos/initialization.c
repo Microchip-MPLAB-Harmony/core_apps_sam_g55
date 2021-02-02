@@ -190,6 +190,7 @@ const SYS_CONSOLE_INIT sysConsole0Init =
 void SYS_Initialize ( void* data )
 {
 
+
     EFC_Initialize();
   
 	PIO_Initialize();
