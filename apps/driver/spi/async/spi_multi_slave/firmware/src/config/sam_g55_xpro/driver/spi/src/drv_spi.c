@@ -318,7 +318,7 @@ static void _DRV_SPI_RemoveClientTransfersFromList(
     while (*pTransferObjList != NULL)
     {
         // Do not remove the buffer object that is already in process
-        if (((*pTransferObjList)->clientHandle == clientObj->clientHandle) && 
+        if (((*pTransferObjList)->clientHandle == clientObj->clientHandle) &&
                 ((*pTransferObjList)->currentState == DRV_SPI_TRANSFER_OBJ_IS_IN_QUEUE))
         {
             // Save the node to be deleted off the list
@@ -603,7 +603,7 @@ DRV_HANDLE DRV_SPI_Open(
             dObj->nClients ++;
 
             /* Generate the client handle */
-            clientObj->clientHandle = (DRV_HANDLE)_DRV_SPI_MAKE_HANDLE(dObj->spiTokenCount, 
+            clientObj->clientHandle = (DRV_HANDLE)_DRV_SPI_MAKE_HANDLE(dObj->spiTokenCount,
                     (uint8_t)drvIndex, iClient);
 
             /* Increment the instance specific token counter */
@@ -743,7 +743,7 @@ bool DRV_SPI_TransferSetup (
         setupRemap.clockPhase = (DRV_SPI_CLOCK_PHASE)dObj->remapClockPhase[setup->clockPhase];
         setupRemap.dataBits = (DRV_SPI_DATA_BITS)dObj->remapDataBits[setup->dataBits];
 
-        if ((setupRemap.clockPhase != DRV_SPI_CLOCK_PHASE_INVALID) && (setupRemap.clockPolarity != DRV_SPI_CLOCK_POLARITY_INVALID) 
+        if ((setupRemap.clockPhase != DRV_SPI_CLOCK_PHASE_INVALID) && (setupRemap.clockPolarity != DRV_SPI_CLOCK_POLARITY_INVALID)
                 && (setupRemap.dataBits != DRV_SPI_DATA_BITS_INVALID))
         {
             /* Save the required setup in client object which can be used while
@@ -816,8 +816,17 @@ void DRV_SPI_WriteReadTransferAdd (
         transferObj->event          = DRV_SPI_TRANSFER_EVENT_PENDING;
         transferObj->clientHandle   = handle;
 
-        transferObj->txSize = txSize;
-        transferObj->rxSize = rxSize;
+        if (clientObj->setup.dataBits != DRV_SPI_DATA_BITS_8)
+        {
+            /* Both SPI and DMA PLIB expect size to be in terms of bytes */
+            transferObj->txSize = txSize << 1;
+            transferObj->rxSize = rxSize << 1;
+        }
+        else
+        {
+            transferObj->txSize = txSize;
+            transferObj->rxSize = rxSize;
+        }
 
         /* Update the unique transfer handle in output parameter.This handle can
          * be used by user to poll the status of transfer operation */
