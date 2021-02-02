@@ -1,18 +1,19 @@
 /*******************************************************************************
-  Interrupt System Service Library Interface Implementation File
+  FLEXCOM5 SPI PLIB
 
-  Company
+  Company:
     Microchip Technology Inc.
 
-  File Name
-    sys_int_nvic.c
+  File Name:
+    plib_flexcom5_spi_master.h
 
-  Summary
-    NVIC implementation of interrupt system service library.
+  Summary:
+   FLEXCOM5 SPI Master PLIB Header File.
 
   Description
-    This file implements the interface to the interrupt system service library
-    not provided in CMSIS.
+    This file defines the interface to the FLEXCOM SPI peripheral library.
+    This library provides access to and control of the associated
+    peripheral instance.
 
   Remarks:
     None.
@@ -44,59 +45,53 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
+#ifndef PLIB_FLEXCOM5_SPI_MASTER_H // Guards against multiple inclusion
+#define PLIB_FLEXCOM5_SPI_MASTER_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include "system/int/sys_int.h"
-#include "peripheral/nvic/plib_nvic.h"
+
+#include "device.h"
+#include "plib_flexcom_spi_master_common.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus // Provide C++ Compatibility
+
+    extern "C" {
+
+#endif
+
+// DOM-IGNORE-END
+
+/****************************** FLEXCOM5 SPI Interface *********************************/
+
+void FLEXCOM5_SPI_Initialize( void );
+
+bool FLEXCOM5_SPI_WriteRead( void * pTransmitData, size_t txSize, void * pReceiveData, size_t rxSize );
+
+bool FLEXCOM5_SPI_Write( void * pTransmitData, size_t txSize );
+
+bool FLEXCOM5_SPI_Read( void * pReceiveData, size_t rxSize );
+
+bool FLEXCOM5_SPI_TransferSetup( FLEXCOM_SPI_TRANSFER_SETUP * setup, uint32_t spiSourceClock );
 
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: Interface Implementation
-// *****************************************************************************
-// *****************************************************************************
+bool FLEXCOM5_SPI_IsBusy( void );
 
-// *****************************************************************************
-void SYS_INT_Enable( void )
-{
-    NVIC_INT_Enable();
-}
+void FLEXCOM5_SPI_CallbackRegister( FLEXCOM_SPI_CALLBACK callback, uintptr_t context );
 
-bool SYS_INT_Disable( void )
-{
-    return NVIC_INT_Disable();
-}
+/* Provide C++ Compatibility */
+#ifdef __cplusplus
 
-void SYS_INT_Restore( bool state )
-{
-    NVIC_INT_Restore(state);
-}
-
-bool SYS_INT_SourceDisable( INT_SOURCE source )
-{
-    bool processorStatus;
-    bool intSrcStatus;
-
-    processorStatus = SYS_INT_Disable();
-
-    intSrcStatus = NVIC_GetEnableIRQ(source);
-
-    NVIC_DisableIRQ( source );
-
-    SYS_INT_Restore( processorStatus );
-
-    /* return the source status */
-    return intSrcStatus;
-}
-
-void SYS_INT_SourceRestore( INT_SOURCE source, bool status )
-{
-    if( status ) {
-        SYS_INT_SourceEnable( source );
     }
-    return;
-}
+
+#endif
+
+#endif // PLIB_FLEXCOM5_SPI_MASTER_H
+
+/*******************************************************************************
+ End of File
+*/
