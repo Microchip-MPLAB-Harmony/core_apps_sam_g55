@@ -158,7 +158,7 @@ typedef struct
     DRV_USART_PLIB_READ read;
     DRV_USART_PLIB_READ_IS_BUSY readIsBusy;
     DRV_USART_PLIB_READ_COUNT_GET readCountGet;
-	DRV_USART_PLIB_READ_ABORT readAbort;
+    DRV_USART_PLIB_READ_ABORT readAbort;
 
     DRV_USART_PLIB_WRITE_CALLBACK_REG writeCallbackRegister;
     DRV_USART_PLIB_WRITE write;
@@ -214,6 +214,8 @@ struct _DRV_USART_INIT
 
     const uint32_t*                         remapError;
 
+	
+	DRV_USART_DATA_BIT                      dataWidth;
 };
 
 //DOM-IGNORE-BEGIN

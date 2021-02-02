@@ -202,6 +202,7 @@ SYS_MODULE_OBJ DRV_USART_Initialize( const SYS_MODULE_INDEX drvIndex, const SYS_
     dObj->remapParity           = usartInit->remapParity;
     dObj->remapStopBits         = usartInit->remapStopBits;
     dObj->remapError            = usartInit->remapError;
+    dObj->dataWidth             = usartInit->dataWidth;
 
     if (OSAL_MUTEX_Create(&dObj->clientMutex) == OSAL_RESULT_FALSE)
     {
@@ -376,6 +377,10 @@ bool DRV_USART_SerialSetup( const DRV_HANDLE handle, DRV_USART_SERIAL_SETUP* set
             /* Clock source cannot be modified dynamically, so passing the '0' to pick
              * the configured clock source value */
             isSuccess = dObj->usartPlib->serialSetup(&setupRemap, 0);
+            if (isSuccess == true)
+            {
+                dObj->dataWidth = setup->dataWidth;
+            }
         }
     }
     return isSuccess;
