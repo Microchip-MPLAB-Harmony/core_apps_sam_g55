@@ -118,13 +118,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4BEC18CE523E7BD9988187353C42DDA9
-- generatedChecksum: D6208760CA3306CDC89E1A72C30E3548
+- generatedChecksum: 7F2007293C76074134241DAED62B194B
   logicalPath: config\sam_g55_xpro\peripheral\nvic
   name: plib_nvic.c
   physicalPath: peripheral\nvic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D6208760CA3306CDC89E1A72C30E3548
+  userChecksum: 7F2007293C76074134241DAED62B194B
 - generatedChecksum: E871033405D5C0D92E61C8D147A5C35B
   logicalPath: config\sam_g55_xpro\peripheral\pio
   name: plib_pio.c
@@ -160,34 +160,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
-- generatedChecksum: 91CBFB015EC788C95FD244423BF4471D
+- generatedChecksum: null
   logicalPath: ''
   name: task1.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 91CBFB015EC788C95FD244423BF4471D
-- generatedChecksum: D7251BB8D53D47E19876F77B64D8E306
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task2.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D7251BB8D53D47E19876F77B64D8E306
-- generatedChecksum: C4789AF18AF84D9E6E03E4223147BC49
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task3.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C4789AF18AF84D9E6E03E4223147BC49
-- generatedChecksum: A9015B03D2A0026C0499C15C2FF75DFF
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task4.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A9015B03D2A0026C0499C15C2FF75DFF
+  userChecksum: null
 - generatedChecksum: 923B2290DA9C0164D4F2DE731494E321
   logicalPath: config\sam_g55_xpro
   name: tasks.c
@@ -216,13 +216,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
-- generatedChecksum: B68E4FEC74675E96181156E5CC33C0D8
+- generatedChecksum: 873A7F9BACAC914E941DC4C0AA141238
   logicalPath: config\sam_g55_xpro
   name: FreeRTOSConfig.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: B68E4FEC74675E96181156E5CC33C0D8
+  userChecksum: 873A7F9BACAC914E941DC4C0AA141238
 - generatedChecksum: 33B8AE06998C7673C7C6978BC2B0BFC2
   logicalPath: packs\ATSAMG55J19_DFP\component
   name: adc.h
@@ -664,34 +664,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 84B3224817BDD8B37961BB3B3441E134
-- generatedChecksum: F180D949ED93F1D21332E473A28D3AC3
+- generatedChecksum: null
   logicalPath: ''
   name: task1.h
   physicalPath: ..\..
   security: NON_SECURE
   type: HEADER
-  userChecksum: F180D949ED93F1D21332E473A28D3AC3
-- generatedChecksum: 3A92F2FD540D790867AA4D1DA3DEE4CC
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task2.h
   physicalPath: ..\..
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3A92F2FD540D790867AA4D1DA3DEE4CC
-- generatedChecksum: 045932CECEB59B5F076D892CBCE9046C
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task3.h
   physicalPath: ..\..
   security: NON_SECURE
   type: HEADER
-  userChecksum: 045932CECEB59B5F076D892CBCE9046C
-- generatedChecksum: 2187DE1EAEEA3A6E4BFDBE3EA92D1743
+  userChecksum: null
+- generatedChecksum: null
   logicalPath: ''
   name: task4.h
   physicalPath: ..\..
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2187DE1EAEEA3A6E4BFDBE3EA92D1743
+  userChecksum: null
 - generatedChecksum: 457832D233EA8DEBD42141842F44A3F3
   logicalPath: packs\ATSAMG55J19_DFP\component
   name: tc.h

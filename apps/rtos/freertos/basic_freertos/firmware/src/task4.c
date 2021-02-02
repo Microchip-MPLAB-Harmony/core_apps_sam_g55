@@ -125,15 +125,15 @@ void TASK4_Tasks ( void )
     bool status = false;
     TickType_t timeNow;
 
-    PIO_PinInterruptCallbackRegister(PIO_PIN_PA2, SwitchPress_Handler, (uintptr_t)NULL);
-    PIO_PinInterruptEnable(PIO_PIN_PA2);
-
     switchPressSemaphore = xSemaphoreCreateBinary();
 
     if (switchPressSemaphore != NULL)
     {
         status = true;
     }
+    
+    PIO_PinInterruptCallbackRegister(PIO_PIN_PA2, SwitchPress_Handler, (uintptr_t)NULL);
+    PIO_PinInterruptEnable(PIO_PIN_PA2);
 
     while (status == true)
     {
