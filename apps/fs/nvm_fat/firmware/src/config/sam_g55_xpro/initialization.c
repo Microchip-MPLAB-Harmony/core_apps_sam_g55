@@ -203,6 +203,7 @@ const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 void SYS_Initialize ( void* data )
 {
 
+
     EFC_Initialize();
   
 	PIO_Initialize();
