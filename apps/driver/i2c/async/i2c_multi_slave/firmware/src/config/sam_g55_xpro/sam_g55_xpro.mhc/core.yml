@@ -174,7 +174,7 @@ children:
       - type: String
         attributes: {id: source}
         children:
-        - {type: Value, value: 'D:/harmony/dev_packs/Microchip/SAMG_DFP/3.3.45/samg55/xc32/ATSAMG55J19/ATSAMG55J19.ld'}
+        - {type: Value, value: 'D:/harmony/dev_packs/Microchip/SAMG_DFP/3.5.60/samg55/xc32/ATSAMG55J19/ATSAMG55J19.ld'}
   - type: Boolean
     attributes: {id: NVIC_22_0_ENABLE}
     children:
