@@ -57,6 +57,10 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -86,6 +90,10 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -101,6 +109,12 @@ children:
   - type: KeyValueSet
     attributes: {id: FLEXCOM_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -118,19 +132,6 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Comment
-    attributes: {id: FLEXCOM_SPI_CLOCK_MODE_COMMENT}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_CSR0_BAUD_RATE}
     children:
@@ -237,10 +238,6 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: KeyValueSet
     attributes: {id: FLEXCOM_SPI_CSR_CPOL}
     children:
@@ -254,10 +251,6 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_CSR_INDEX}
     children:
@@ -278,10 +271,6 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Hex
     attributes: {id: FLEXCOM_SPI_DUMMY_DATA}
     children:
@@ -291,6 +280,10 @@ children:
         attributes: {id: max}
         children:
         - {type: Value, value: '255'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -317,6 +310,15 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_MR_BRSRCCLK}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_MR_DLYBCS}
     children:
@@ -333,6 +335,10 @@ children:
       children:
       - type: Boolean
         attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
     - type: Values
@@ -352,10 +358,6 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
     - type: Values
       children:
       - type: Dynamic
@@ -379,6 +381,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -396,6 +402,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -473,6 +483,10 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'false'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -491,8 +505,26 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom5, value: 'true'}
+  - type: Boolean
+    attributes: {id: USE_SPI_DMA}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
 - type: Attachments
   children:
+  - type: DirectCapability
+    attributes: {id: FLEXCOM5_I2C}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
   - type: DirectCapability
     attributes: {id: FLEXCOM5_SPI}
     children:
@@ -506,5 +538,14 @@ children:
         attributes: {id: targetAttachmentID}
         children:
         - {type: Value, value: drv_spi_SPI_dependency}
+  - type: DirectCapability
+    attributes: {id: FLEXCOM5_UART}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
 - type: ElementPosition
   attributes: {x: '238', y: '192', id: flexcom5}
