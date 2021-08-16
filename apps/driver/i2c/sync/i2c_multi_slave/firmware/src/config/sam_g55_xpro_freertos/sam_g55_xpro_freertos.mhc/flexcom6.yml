@@ -20,6 +20,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/twi/master/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -45,6 +49,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/twi/master/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: markup}
         children:
@@ -74,6 +82,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/twi/master/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: markup}
         children:
@@ -243,6 +255,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Integer
+    attributes: {id: I2C_CLOCK_SPEED_HZ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: flexcom6, value: '400000'}
   - type: String
     attributes: {id: RECEIVE_DATA_REGISTER}
     children:
