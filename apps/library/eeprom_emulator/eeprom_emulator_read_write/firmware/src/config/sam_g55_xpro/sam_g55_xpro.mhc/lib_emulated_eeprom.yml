@@ -7,6 +7,12 @@ children:
   - type: Integer
     attributes: {id: EEPROM_EMULATOR_EEPROM_LOGICAL_SIZE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -14,6 +20,12 @@ children:
   - type: Integer
     attributes: {id: EEPROM_EMULATOR_EEPROM_SIZE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -21,6 +33,16 @@ children:
   - type: Integer
     attributes: {id: EEPROM_EMULATOR_EEPROM_SIZE_IN_BLOCKS}
     children:
+    - type: Attributes
+      children:
+      - type: Integer
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '64'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: User
@@ -28,6 +50,12 @@ children:
   - type: Hex
     attributes: {id: EEPROM_EMULATOR_EEPROM_START_ADDRESS}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -56,6 +84,12 @@ children:
   - type: Integer
     attributes: {id: EEPROM_EMULATOR_NUM_LOGICAL_PAGES}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -63,6 +97,12 @@ children:
   - type: Integer
     attributes: {id: EEPROM_EMULATOR_NUM_PHYSICAL_PAGES}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
