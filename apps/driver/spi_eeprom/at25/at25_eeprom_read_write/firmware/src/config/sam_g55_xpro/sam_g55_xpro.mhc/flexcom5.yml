@@ -267,6 +267,13 @@ children:
       - type: Dynamic
         attributes: {id: flexcom5, value: MASTER}
   - type: Integer
+    attributes: {id: FLEXCOM_SPI_NUM_CSR}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: flexcom5, value: '1'}
+  - type: Integer
     attributes: {id: FLEXCOM_SPI_PERIPHERAL_CLOCK}
     children:
     - type: Values
