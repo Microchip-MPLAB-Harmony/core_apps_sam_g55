@@ -29,6 +29,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -54,6 +58,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: markup}
         children:
@@ -83,6 +91,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: markup}
         children:
@@ -229,6 +241,16 @@ children:
   - type: KeyValueSet
     attributes: {id: FLEXCOM_USART_OPERATING_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic

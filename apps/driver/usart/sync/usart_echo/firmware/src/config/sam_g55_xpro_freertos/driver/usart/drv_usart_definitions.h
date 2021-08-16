@@ -214,8 +214,8 @@ struct _DRV_USART_INIT
 
     const uint32_t*                         remapError;
 
-	
-	DRV_USART_DATA_BIT                      dataWidth;
+
+    DRV_USART_DATA_BIT                      dataWidth;
 };
 
 //DOM-IGNORE-BEGIN
