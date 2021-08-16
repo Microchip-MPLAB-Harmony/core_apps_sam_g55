@@ -53,6 +53,10 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -82,6 +86,10 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -97,6 +105,12 @@ children:
   - type: KeyValueSet
     attributes: {id: FLEXCOM_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -127,6 +141,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -144,6 +162,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -163,6 +185,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom6, value: '119996416'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_TWI_CWGR_BRSRCCLK}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEXCOM_TWI_CWGR_CHDIV}
     children:
@@ -193,6 +224,10 @@ children:
         attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -211,6 +246,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom6, value: '119996416'}
+  - type: Integer
+    attributes: {id: I2C_CLOCK_SPEED}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: I2C_CLOCK_SPEED_HZ}
     children:
@@ -235,6 +279,12 @@ children:
   - type: Boolean
     attributes: {id: TWI_INTERRUPT_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -254,5 +304,23 @@ children:
         attributes: {id: targetAttachmentID}
         children:
         - {type: Value, value: drv_at24_I2C_dependency}
+  - type: DirectCapability
+    attributes: {id: FLEXCOM6_SPI}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: DirectCapability
+    attributes: {id: FLEXCOM6_UART}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
 - type: ElementPosition
   attributes: {x: '200', y: '93', id: flexcom6}
