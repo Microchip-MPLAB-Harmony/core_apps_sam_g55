@@ -55,8 +55,8 @@
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/efc/plib_efc.h"
 #include "peripheral/flexcom/twi/master/plib_flexcom6_twi_master.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "bsp/bsp.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
@@ -79,7 +79,7 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 119996416
+#define CPU_CLOCK_FREQUENCY 100007936
 
 // *****************************************************************************
 // *****************************************************************************
