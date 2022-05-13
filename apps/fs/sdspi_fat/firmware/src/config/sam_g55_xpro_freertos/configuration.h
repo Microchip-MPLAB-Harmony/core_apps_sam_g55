@@ -85,7 +85,7 @@ extern "C" {
 #define SYS_TIME_HW_COUNTER_WIDTH                   (32)
 #define SYS_TIME_HW_COUNTER_PERIOD                  (0xFFFFFFFFU)
 #define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
-#define SYS_TIME_CPU_CLOCK_FREQUENCY                (119996416)
+#define SYS_TIME_CPU_CLOCK_FREQUENCY                (100007936)
 #define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (188)
 
 
@@ -107,7 +107,7 @@ extern "C" {
 #define SYS_FS_STACK_SIZE                 1024
 #define SYS_FS_PRIORITY                   1
 
-#define SYS_FS_FAT_VERSION                "v0.14a"
+#define SYS_FS_FAT_VERSION                "v0.14b"
 #define SYS_FS_FAT_READONLY               false
 #define SYS_FS_FAT_CODE_PAGE              437
 #define SYS_FS_FAT_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
