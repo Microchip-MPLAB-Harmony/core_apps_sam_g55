@@ -49,8 +49,8 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "bsp/bsp.h"
-#include "driver/usart/drv_usart.h"
 #include "peripheral/flexcom/usart/plib_flexcom7_usart.h"
+#include "driver/usart/drv_usart.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
@@ -71,6 +71,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAMG55J19"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAMG"
+#define DEVICE_SERIES		 "SAMG55"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 100007936
