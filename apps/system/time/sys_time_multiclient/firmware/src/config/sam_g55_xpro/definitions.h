@@ -55,8 +55,8 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/rtt/plib_rtt.h"
 #include "peripheral/efc/plib_efc.h"
+#include "peripheral/rtt/plib_rtt.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
@@ -73,6 +73,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAMG55J19"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAMG"
+#define DEVICE_SERIES		 "SAMG55"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 100007936
