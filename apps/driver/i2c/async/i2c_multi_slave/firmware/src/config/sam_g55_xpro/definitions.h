@@ -55,8 +55,8 @@
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/efc/plib_efc.h"
 #include "peripheral/flexcom/twi/master/plib_flexcom6_twi_master.h"
-#include "system/time/sys_time.h"
 #include "driver/i2c/drv_i2c.h"
+#include "system/time/sys_time.h"
 #include "bsp/bsp.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
@@ -79,13 +79,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMG55J19"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "SAMG"
-#define DEVICE_SERIES		 "SAMG55"
+#define DEVICE_NAME          "ATSAMG55J19"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "SAMG"
+#define DEVICE_SERIES        "SAMG55"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 100007936
+#define CPU_CLOCK_FREQUENCY 100007936U
 
 // *****************************************************************************
 // *****************************************************************************
