@@ -53,8 +53,8 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/efc/plib_efc.h"
 #include "peripheral/flexcom/spi/master/plib_flexcom5_spi_master.h"
+#include "peripheral/efc/plib_efc.h"
 #include "driver/spi/drv_spi.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
@@ -76,13 +76,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMG55J19"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "SAMG"
-#define DEVICE_SERIES		 "SAMG55"
+#define DEVICE_NAME          "ATSAMG55J19"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "SAMG"
+#define DEVICE_SERIES        "SAMG55"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 100007936
+#define CPU_CLOCK_FREQUENCY 100007936U
 
 // *****************************************************************************
 // *****************************************************************************
