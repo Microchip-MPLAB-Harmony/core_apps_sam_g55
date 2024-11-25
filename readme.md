@@ -29,7 +29,7 @@ This content can also be downloaded using MCC content manager available as part 
 Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_SAM_G55_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
 
 To view the documentation offline, follow these steps:
- - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-057A9615-797B-41E2-9879-4CA409198FD3?type=webhelp).
+ - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-60648E16-92F6-41B0-9425-D1D092CC55D9?type=webhelp).
  - Extract the zip file into a folder.
  - Navigate to the folder and open **index.html** in a web browser of your choice.
 
