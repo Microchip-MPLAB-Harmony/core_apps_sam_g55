@@ -1,0 +1,109 @@
+configVersion: 1.0.0
+componentName: rtt
+coreVersion: 5.8.2
+device: ATSAMG55J19
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: rtt
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: RTT_TMR
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: sys_time
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: sys_time_TMR_dependency
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: rtt
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: rtt
+          x: '62'
+          y: '202'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    SYS_TIME_COMPONENT_ID:
+      attributes:
+        id: SYS_TIME_COMPONENT_ID
+      children:
+      - children:
+        - attributes:
+            id: rtt
+            value: sys_time
+          type: Dynamic
+        type: Values
+      type: String
+    rttALMIEN:
+      attributes:
+        id: rttALMIEN
+      children:
+      - children:
+        - attributes:
+            id: rtt
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    rttINCIEN:
+      attributes:
+        id: rttINCIEN
+      children:
+      - children:
+        - attributes:
+            id: rtt
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    rttRTPRES:
+      attributes:
+        id: rttRTPRES
+      children:
+      - children:
+        - attributes:
+            id: rtt
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
