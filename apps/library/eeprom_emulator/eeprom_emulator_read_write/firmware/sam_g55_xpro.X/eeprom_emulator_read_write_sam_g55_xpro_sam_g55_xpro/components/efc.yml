@@ -1,0 +1,76 @@
+configVersion: 1.0.0
+componentName: efc
+coreVersion: 5.8.2
+device: ATSAMG55J19
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: efc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: EFC_MEMORY
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: lib_emulated_eeprom
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: lib_emulated_eeprom_MEMORY_dependency
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: efc
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: efc
+          x: '148'
+          y: '108'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    NVM_RWS:
+      attributes:
+        id: NVM_RWS
+      children:
+      - children:
+        - attributes:
+            id: efc
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
