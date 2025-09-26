@@ -13,7 +13,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 This repository contains the MPLAB® Harmony 3 driver and system service application examples for SAM G55 family
 
 - [Release Notes](release_notes.md)
-- [Microchip SLA](Microchip_SLA001.md)
+- [License](License.md)
 
 To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using MCC content manager available as part of the MPLAB® X IDE.
@@ -29,13 +29,13 @@ This content can also be downloaded using MCC content manager available as part 
 Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_SAM_G55_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
 
 To view the documentation offline, follow these steps:
- - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-60648E16-92F6-41B0-9425-D1D092CC55D9?type=webhelp).
+ - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-057A9615-797B-41E2-9879-4CA409198FD3?type=webhelp).
  - Extract the zip file into a folder.
  - Navigate to the folder and open **index.html** in a web browser of your choice.
 
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55/blob/master/Microchip_SLA001.md)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55/blob/master/License.md)
 [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_sam_g55.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55/releases/latest)
 [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_sam_g55.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_sam_g55.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_g55/graphs/commit-activity)
