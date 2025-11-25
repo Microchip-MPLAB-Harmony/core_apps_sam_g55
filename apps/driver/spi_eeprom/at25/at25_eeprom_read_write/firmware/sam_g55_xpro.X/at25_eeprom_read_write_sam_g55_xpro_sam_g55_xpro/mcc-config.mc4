@@ -27,7 +27,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_g55_xpro\configuration.h
   hash: 334a3b11f8b7c75e73796318e143da26ecaed186d7e953db1ed2f5729143378b
 - file: ..\src\config\sam_g55_xpro\definitions.h
-  hash: d29021c24c55f47653e27a59cd2fa23c747c7bd02a3fa62ef5b0c3ecfb630a67
+  hash: b86a0b49b3d6556c2fbc2d9555e31b1d189489e6092c28fbf9ca018d72594728
 - file: ..\src\config\sam_g55_xpro\device.h
   hash: 21966390fb35665dd6bdebaed2947df8c51b384ab2cc0b41c0e041574ce7210a
 - file: ..\src\config\sam_g55_xpro\device_cache.h

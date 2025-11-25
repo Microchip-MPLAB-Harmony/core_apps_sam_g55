@@ -34,7 +34,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_g55_xpro_freertos\configuration.h
   hash: 5635ce7111a688f05f6896235ccea6fdbf9fd6b7372955edf8cd4e1bb3d149fa
 - file: ..\src\config\sam_g55_xpro_freertos\definitions.h
-  hash: bdfd50bdf3ec0b0fe8b2dfd17b74c46dda4a136f7af841c60d1e5b36848246ac
+  hash: 5e78c3f9df87f7d93d982b1703ff483c09506785739470ac216e2ed18262df37
 - file: ..\src\config\sam_g55_xpro_freertos\device.h
   hash: 21966390fb35665dd6bdebaed2947df8c51b384ab2cc0b41c0e041574ce7210a
 - file: ..\src\config\sam_g55_xpro_freertos\device_cache.h

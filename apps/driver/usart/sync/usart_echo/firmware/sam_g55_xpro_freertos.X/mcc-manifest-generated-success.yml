@@ -2,8 +2,8 @@
 
 manifest_file_version: 1.0.0
 project: sync_usart_echo_sam_g55_xpro_freertos
-creation_date: 2025-09-23T09:15:14.292+00:00[UTC]
-operating_system: Windows 10
+creation_date: 2025-11-25T11:00:26.007+00:00[UTC]
+operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
 device_name: ATSAMG55J19
@@ -18,8 +18,8 @@ device_library: {library_class: com.microchip.mcc.harmony.Harmony3Library, name:
   version: Bundled}
 packs: {name: SAMG_DFP, version: 3.9.204}
 modules:
-- {name: core, type: HARMONY, version: v3.15.5}
 - {name: csp, type: HARMONY, version: v3.23.0}
+- {name: core, type: HARMONY, version: v3.15.5}
 - {name: CMSIS_5, type: HARMONY, version: 5.9.0}
 - {name: FreeRTOS-Kernel, type: HARMONY, version: V11.1.0}
 - {name: bsp, type: HARMONY, version: v3.23.0}
